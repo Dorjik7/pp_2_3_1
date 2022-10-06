@@ -10,29 +10,29 @@
     <title>User List</title>
 </head>
 <body>
-<h1 style="text-align: center;"><strong>User List</strong></h1>
+<h1 style="text-align: center;"><strong>Список пользователей</strong></h1>
 <br>
 <br>
-<div class="text-center"><input type="button" value="Add user" onclick="window.location.href = 'add'"/></div>
+<div class="text-center"><input type="button" value="Добавить пользователя" onclick="window.location.href = 'add'"/></div>
 
 <br>
 <br>
 <table  border="2" align="center" cellspacing="2" cellpadding="3">
     <tr>
-        <th>Name</th>
-        <th>Second Name</th>
-        <th>Age</th>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Возраст</th>
         <th>Email</th>
     </tr>
     <tr  style="text-align:center" th:each="user : ${users}">
-        <td th:text="${user.getFirstName()}">Name</td>
-        <td th:text="${user.getSecondName()}">Second Name</td>
-        <td th:text="${user.getAge()}">Age</td>
+        <td th:text="${user.getFirstName()}">Имя</td>
+        <td th:text="${user.getSecondName()}">Фамилия</td>
+        <td th:text="${user.getAge()}">Возраст</td>
         <td th:text="${user.getEmail()}">Email</td>
         <td> <a th:href="@{/{id}/edit(id=${user.getId()})}">
-            <button type="button">Edit user </button></a>
+            <button type="button">Изменить</button></a>
             <form th:method="DELETE" th:action="@{/{id}(id=${user.getId()})}">
-                <input type="submit" value = "Delete user"/>
+                <input type="submit" value = "Удалить"/>
             </form>
         </td>
     </tr>
