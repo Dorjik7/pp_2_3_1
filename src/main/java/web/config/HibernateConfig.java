@@ -26,7 +26,7 @@ public class HibernateConfig {
 
     private final Environment env;
 
-    @Autowired
+
     public HibernateConfig(ApplicationContext applicationContext, Environment env) {
 
         this.env = env;
