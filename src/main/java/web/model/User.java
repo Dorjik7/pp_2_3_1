@@ -25,10 +25,10 @@ public class User {
     public User() {
     }
 
-    public User(String name, String second_name, int age, String email) {
+    public User(String name, String secondName, int age, String email) {
 
         this.firstName = name;
-        this.secondName = second_name;
+        this.secondName = secondName;
         this.age = age;
         this.email = email;
     }
@@ -53,8 +53,8 @@ public class User {
         return secondName;
     }
 
-    public void setSecondName(String second_name) {
-        this.secondName = second_name;
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 
     public int getAge() {
