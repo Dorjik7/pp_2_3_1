@@ -78,7 +78,7 @@ public class User {
 
         return "User{" +
                 "id=" + id +
-                ", name='" + firstName + '\'' +
+                ", first_name='" + firstName + '\'' +
                 ", second_name='" + secondName + '\'' +
                 ", age=" + age +
                 ", email='" + email + '\'' +
